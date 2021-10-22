@@ -54,13 +54,13 @@ function addFill(shape) {
 
 function animateFadeInOnShape(shape) {
   const fadeIn_props = {
-    duration: 5000,
+    duration: 4000,
     iterations: 1,
     fill: "forwards",
     easing: "ease-in-out",
     composite: "add",
   };
-  const fadeIn_kf = [{ opacity: 0 }, { opacity: 1 }, { opacity: 0 }];
+  const fadeIn_kf = [{ opacity: 0 }, { opacity: 0.7 }, { opacity: 0 }];
   const fadeAnimation = shape.animate(fadeIn_kf, fadeIn_props);
   //   trackMouseOutFromShape(shape, fadeAnimation);
 }
