@@ -11,3 +11,7 @@ section#gradient-wrapper {
 g#me {
   pointer-events: none;
 }
+
+g#shapes > * {
+  opacity: 0;
+}
