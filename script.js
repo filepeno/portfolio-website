@@ -25,13 +25,24 @@ function addShapesToHtmlObject() {
   console.log(HTML.shapes);
 }
 
-function makeShapesTransparent() {}
+function makeShapesTransparent() {
+  HTML.shapes.forEach((shape) => {
+    shape.style.fill = "transparent";
+    shape.style.stroke = "transparent";
+  });
+  //   document.querySelectorAll("g#circles > *").forEach((circle) => {
+  //     circle.style.stroke = "transparent";
+  //   });
+}
 
 function trackHoverOnShapes() {
   //add eventlistener to groups
-  document.querySelectorAll("g#shapes > *").forEach((shape) => {
+  HTML.shapes.forEach((shape) => {
     shape.addEventListener("mouseover", getShape);
   });
+  //   document.querySelectorAll("g#shapes > *").forEach((shape) => {
+  //     shape.addEventListener("mouseover", getShape);
+  //   });
 }
 
 function getShape() {
@@ -40,5 +51,5 @@ function getShape() {
 }
 
 function changeFill(shape) {
-  shape.style.fill = shape.style.fill;
+  shape.style = "";
 }

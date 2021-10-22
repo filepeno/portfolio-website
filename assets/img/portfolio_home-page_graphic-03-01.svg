@@ -9,7 +9,6 @@
     <circle cx="535.72" cy="94.79" r="89.38" fill="#ffd1ba"/>
     <polygon points="651.54 168.28 725.54 123.28 782.2 165.61 719.6 105.03 651.54 168.28" fill="#ff975c"/>
     <circle cx="408.22" cy="546.77" r="95.09" fill="#496eff"/>
-    <g id="circles" opacity="0.6">
       <path d="M195.46,121.3a7,7,0,0,0,1.35,4.14,7.05,7.05,0,0,0,2.29,2,7,7,0,0,0,3.39.87,7,7,0,1,0-7-7Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M188.43,121.3a14,14,0,0,0,2.7,8.28,14,14,0,1,0-2.7-8.28Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M181.41,121.3a21.07,21.07,0,1,0,10.2-18.06A21,21,0,0,0,181.41,121.3Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
@@ -18,7 +17,7 @@
       <path d="M160.32,121.3a42,42,0,0,0,8.08,24.83,42.56,42.56,0,0,0,13.77,12.13,42.18,42.18,0,1,0-21.85-37Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M153.3,121.3a49.17,49.17,0,1,0,23.82-42.15A49,49,0,0,0,153.3,121.3Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M146.27,121.3A56,56,0,0,0,157,154.4a56.55,56.55,0,0,0,18.35,16.17,56.24,56.24,0,1,0-29.12-49.27Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
-    </g>
+
     <polygon points="441.04 498.28 201.65 498.86 202.87 121.25 433.84 255.67 441.04 498.28" fill="#f7adad" opacity="0.76"/>
     <polygon points="560.54 436.1 497.1 433.13 488.63 54.76 589.82 68.29 560.54 436.1" fill="#c3baa8" opacity="0.82"/>
     <polygon points="575.62 445.43 281.41 443.8 412.8 238.56 572.37 321.66 575.62 445.43" fill="#527d69"/>

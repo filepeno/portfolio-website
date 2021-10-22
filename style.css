@@ -11,12 +11,3 @@ section#gradient-wrapper {
 g#me {
   pointer-events: none;
 }
-
-g#shapes > * {
-  filter: grayscale(1);
-  fill: transparent;
-}
-
-g#circles > * {
-  stroke: transparent;
-}
