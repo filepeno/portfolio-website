@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section#gradient-wrapper {
+  background: linear-gradient(var(--bg-color-main-01), var(--bg-color-main-02));
+}
