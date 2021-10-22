@@ -7,3 +7,16 @@
 section#gradient-wrapper {
   background: linear-gradient(var(--bg-color-main-01), var(--bg-color-main-02));
 }
+
+g#me {
+  pointer-events: none;
+}
+
+g#shapes > * {
+  filter: grayscale(1);
+  fill: none;
+}
+
+g#circles > * {
+  stroke: none;
+}

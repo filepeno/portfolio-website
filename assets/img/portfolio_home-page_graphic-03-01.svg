@@ -9,7 +9,7 @@
     <circle cx="535.72" cy="94.79" r="89.38" fill="#ffd1ba"/>
     <polygon points="651.54 168.28 725.54 123.28 782.2 165.61 719.6 105.03 651.54 168.28" fill="#ff975c"/>
     <circle cx="408.22" cy="546.77" r="95.09" fill="#496eff"/>
-    <g opacity="0.6">
+    <g id="circles" opacity="0.6">
       <path d="M195.46,121.3a7,7,0,0,0,1.35,4.14,7.05,7.05,0,0,0,2.29,2,7,7,0,0,0,3.39.87,7,7,0,1,0-7-7Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M188.43,121.3a14,14,0,0,0,2.7,8.28,14,14,0,1,0-2.7-8.28Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
       <path d="M181.41,121.3a21.07,21.07,0,1,0,10.2-18.06A21,21,0,0,0,181.41,121.3Z" fill="none" stroke="#ffdfa7" stroke-miterlimit="10" stroke-width="3"/>
