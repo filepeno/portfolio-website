@@ -22,7 +22,6 @@ function addShapesToHtmlObject() {
   document.querySelectorAll("g#shapes > *").forEach((shape) => {
     HTML.shapes.push(shape);
   });
-  console.log(HTML.shapes);
 }
 
 function makeShapesTransparent() {
@@ -30,9 +29,6 @@ function makeShapesTransparent() {
     shape.style.fill = "transparent";
     shape.style.stroke = "transparent";
   });
-  //   document.querySelectorAll("g#circles > *").forEach((circle) => {
-  //     circle.style.stroke = "transparent";
-  //   });
 }
 
 function trackHoverOnShapes() {
@@ -40,9 +36,6 @@ function trackHoverOnShapes() {
   HTML.shapes.forEach((shape) => {
     shape.addEventListener("mouseover", getShape);
   });
-  //   document.querySelectorAll("g#shapes > *").forEach((shape) => {
-  //     shape.addEventListener("mouseover", getShape);
-  //   });
 }
 
 function getShape() {
