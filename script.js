@@ -54,38 +54,13 @@ function addFill(shape) {
 
 function animateFadeInOnShape(shape) {
   const fadeIn_props = {
-    duration: 3000,
+    duration: 5000,
     iterations: 1,
     fill: "forwards",
     easing: "ease-in-out",
     composite: "add",
   };
-  const fadeIn_kf = [{ opacity: 0 }, { opacity: 1 }];
+  const fadeIn_kf = [{ opacity: 0 }, { opacity: 1 }, { opacity: 0 }];
   const fadeAnimation = shape.animate(fadeIn_kf, fadeIn_props);
-  trackMouseOutFromShape(shape, fadeAnimation);
-}
-
-function trackMouseOutFromShape(shape, fadeAnimation) {
-  shape.addEventListener("mouseout", animateFadeOutOnShape);
-  function animateFadeOutOnShape() {
-    console.log("mouse left the shape");
-    fadeAnimation.pause();
-    const fadeCurrentTime = fadeAnimation.currentTime;
-    console.log(fadeCurrentTime);
-    let currentOpacity;
-    if (fadeCurrentTime > 10) {
-      currentOpacity = fadeCurrentTime / 3000;
-      console.log(currentOpacity);
-      const fadeOut_props = {
-        duration: fadeCurrentTime,
-        iterations: 1,
-        fill: "forwards",
-        easing: "ease-in-out",
-        composite: "add",
-      };
-      const fadeOut_kf = [{ opacity: currentOpacity }, { opacity: 0 }];
-      fadeAnimation.cancel();
-      setTimeout(shape.animate(fadeOut_kf, fadeOut_props), 1000);
-    }
-  }
+  //   trackMouseOutFromShape(shape, fadeAnimation);
 }
