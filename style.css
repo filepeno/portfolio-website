@@ -14,9 +14,9 @@ g#me {
 
 g#shapes > * {
   filter: grayscale(1);
-  fill: none;
+  fill: transparent;
 }
 
 g#circles > * {
-  stroke: none;
+  stroke: transparent;
 }

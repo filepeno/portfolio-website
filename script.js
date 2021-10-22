@@ -9,4 +9,17 @@ async function loadSvg() {
   const heroSvg = await fetch("assets/img/portfolio_home-page_graphic-03-01.svg");
   const heroSvgText = await heroSvg.text();
   document.querySelector("section#hero").innerHTML = heroSvgText;
+  trackHoverOnShapes();
+}
+
+function trackHoverOnShapes() {
+  //add eventlistener to groups
+  document.querySelectorAll("g#shapes > *").forEach((shape) => {
+    console.log(shape);
+    shape.addEventListener("mouseover", getShape);
+  });
+}
+
+function getShape() {
+  console.log(this);
 }
