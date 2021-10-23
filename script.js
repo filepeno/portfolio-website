@@ -13,9 +13,14 @@ async function loadSvg() {
   const heroSvg = await fetch("assets/img/portfolio_home-page_graphic-03-01.svg");
   const heroSvgText = await heroSvg.text();
   document.querySelector("section#hero").innerHTML = heroSvgText;
+  startDelegator();
+}
+
+function startDelegator() {
   addShapesToHtmlObject();
   makeShapesTransparent();
   trackMouseOverOnShapes();
+  resizeSvgViewBox();
 }
 
 function addShapesToHtmlObject() {
@@ -40,7 +45,6 @@ function trackMouseOverOnShapes() {
 }
 
 function getShape() {
-  console.log(this);
   addFill(this);
   //   trackMouseOutOnShapes(this)
 }
@@ -63,4 +67,11 @@ function animateFadeInOnShape(shape) {
   const fadeIn_kf = [{ opacity: 0 }, { opacity: 0.7 }, { opacity: 0 }];
   const fadeAnimation = shape.animate(fadeIn_kf, fadeIn_props);
   //   trackMouseOutFromShape(shape, fadeAnimation);
+}
+
+//resize svg viewbox
+function resizeSvgViewBox() {
+  const svg = document.getElementsByTagName("svg")[0];
+  console.log(svg);
+  svg.setAttribute("viewBox", "290 0 400 700");
 }
