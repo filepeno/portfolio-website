@@ -20,7 +20,7 @@ function startDelegator() {
   addShapesToHtmlObject();
   makeShapesTransparent();
   trackMouseOverOnShapes();
-  resizeSvgViewBox();
+  trackMediaScreenSize();
 }
 
 function addShapesToHtmlObject() {
@@ -69,9 +69,34 @@ function animateFadeInOnShape(shape) {
   //   trackMouseOutFromShape(shape, fadeAnimation);
 }
 
+function trackMediaScreenSize() {
+  const mq1 = window.matchMedia("(max-width: 500px)");
+  if (mq1.matches) {
+    resizeSvgViewBox("small");
+  }
+  mq1.addEventListener("change", screenTest);
+}
+
+function screenTest(e) {
+  if (e.matches) {
+    /* the viewport is smaller than mq */
+    resizeSvgViewBox("small");
+  } else {
+    /* the viewport is larger than mq */
+    resizeSvgViewBox("large");
+  }
+}
+
 //resize svg viewbox
-function resizeSvgViewBox() {
+function resizeSvgViewBox(size) {
   const svg = document.getElementsByTagName("svg")[0];
-  console.log(svg);
-  svg.setAttribute("viewBox", "290 0 400 700");
+  //   svg.setAttribute("viewBox", "290 0 400 700");
+  switch (size) {
+    case "small":
+      svg.setAttribute("viewBox", "290 0 400 700");
+      break;
+    case "large":
+      svg.setAttribute("viewBox", "0 0 842 651.04");
+      break;
+  }
 }
