@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  position: relative;
+}
+
 section#gradient-wrapper {
   background: linear-gradient(var(--bg-color-main-01), var(--bg-color-main-02));
 }
@@ -14,4 +18,18 @@ g#me {
 
 g#shapes > * {
   opacity: 0;
+}
+
+section#title-text {
+  position: absolute;
+  top: 0vw;
+  left: 10vw;
+}
+
+h1 {
+  font-family: var(--font-heading-01);
+  font-weight: 100;
+  color: var(--font-color-01);
+  font-size: 3.6vw;
+  line-height: 1.5em;
 }

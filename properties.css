@@ -2,4 +2,8 @@
   /* colours */
   --bg-color-main-01: #7b7b7b;
   --bg-color-main-02: #df7777;
+  --font-color-01: white;
+  /* fonts */
+  --font-heading-01: "Roboto Mono", monospace;
+  --font-heading-02: "Josefin Sans", sans-serif;
 }
