@@ -12,7 +12,11 @@ body {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 var(--side-margin) 5rem var(--side-margin);
+  padding-top: 1rem;
 }
 
 li {
@@ -90,7 +94,7 @@ section#title-text h1 {
 h1#title-projects {
   font-size: 4rem;
   margin-top: 15vw;
-  margin-left: 2rem;
+  margin-left: var(--side-margin);
   margin-bottom: 10vw;
   width: 70%;
 }
@@ -102,7 +106,7 @@ div.divider-line {
 }
 
 .project {
-  padding: 6rem 2rem 0 2rem;
+  padding: 6rem var(--side-padding) 0 var(--side-padding);
 }
 
 div.left-grid,

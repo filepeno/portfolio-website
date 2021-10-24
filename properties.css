@@ -17,9 +17,11 @@
   --h2-font-size: 3rem;
   --h3-font-size: calc(var(--h2-font-size) / 2);
   /* margins */
+  --side-margin: 3rem;
   --margin-tag-01: 20px;
   --margin-tag-02: calc(var(--margin-tag-01) / 2);
   /* paddings */
+  --side-padding: 3rem;
   --padding-tag-01: 0.8rem;
   --padding-tag-02: calc(var(--padding-tag-01) / 2);
 }
