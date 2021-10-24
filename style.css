@@ -64,6 +64,7 @@ h1#title-projects {
 }
 
 .project {
+  margin: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -76,11 +77,33 @@ div.info-box {
   grid-area: 1 / 1 / 2 / 3;
 }
 
+div.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+div.tag {
+  border: 1px solid var(--font-color-01);
+  padding: var(--padding-tag-02) var(--padding-tag-01);
+  margin-right: var(--margin-tag-01);
+  margin-bottom: var(--margin-tag-02);
+  border-radius: 2em;
+}
+
+#mosquito-attack div.tag {
+  border: 1px solid var(--font-color-mosquito-01);
+}
+
 #mosquito-attack video {
   grid-area: 1 / 3 / 2 / 6;
   max-width: 100%;
   height: auto;
 }
+
+/* #mosquito-attack h2 {
+  font-size: var(--h2-font-size);
+} */
 
 p.description {
   grid-area: 2 / 2 / 3 / 5;
