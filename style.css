@@ -37,9 +37,9 @@ main {
   position: relative;
 }
 
-#home-gradient {
+/* #home-gradient {
   background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02));
-}
+} */
 
 g#me {
   pointer-events: none;
