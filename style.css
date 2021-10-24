@@ -84,7 +84,7 @@ div.left-grid,
 div.right-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem 1rem;
+  gap: 2rem 2rem;
 }
 
 .project h2 {
@@ -161,6 +161,7 @@ div.screenshots img {
 
 #mosquito-attack {
   color: var(--font-color-mosquito-01);
+  padding-top: 0;
 }
 
 /* BYU studio */
