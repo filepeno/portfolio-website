@@ -77,6 +77,10 @@ div.divider-line {
 
 .project {
   margin: 0 2rem;
+}
+
+div.left-grid,
+div.right-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem 1rem;
@@ -90,16 +94,29 @@ div.divider-line {
   font-size: var(--h3-font-size);
 }
 
+div.left-grid div.info-box {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+div.left-grid .hero {
+  grid-area: 1 / 3 / 2 / 6;
+}
+
+div.right-grid div.info-box {
+  grid-area: 1 / 4 / 2 / 6;
+}
+
+div.right-grid .hero {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
 p.description {
   grid-area: 2 / 2 / 3 / 5;
   margin-bottom: 3rem;
 }
+
 div.screenshots {
   grid-area: 3 / 1 / 4 / 6;
-}
-
-div.info-box {
-  grid-area: 1 / 1 / 2 / 3;
 }
 
 div.tags {
@@ -115,9 +132,10 @@ div.tag {
   margin-bottom: var(--margin-tag-02);
   border-radius: 2em;
 }
+
 /* mosquito-attack */
 
-#mosquito-divider {
+#mosquito-attack div.divider-line {
   background-color: var(--font-color-mosquito-01);
 }
 
@@ -130,7 +148,6 @@ div.tag {
 }
 
 #mosquito-attack video {
-  grid-area: 1 / 3 / 2 / 6;
   max-width: 100%;
   height: auto;
 }
