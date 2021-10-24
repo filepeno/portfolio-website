@@ -4,12 +4,34 @@
   padding: 0;
 }
 
+/* GENERAL */
+
+body {
+  background-color: var(--bg-body);
+}
+
+h1 {
+  font-family: var(--font-heading-01);
+  font-weight: 100;
+  color: var(--font-color-01);
+}
+
+h2,
+h3,
+h4,
+div.tag {
+  font-family: var(--font-heading-02);
+  font-weight: 200;
+}
+
+/* HOME-PAGE */
+
 main {
   position: relative;
 }
 
-section#gradient-wrapper {
-  background: linear-gradient(var(--bg-color-main-01), var(--bg-color-main-02));
+#home-gradient {
+  background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02));
 }
 
 g#me {
@@ -26,10 +48,23 @@ section#title-text {
   left: 10vw;
 }
 
-h1 {
-  font-family: var(--font-heading-01);
-  font-weight: 100;
-  color: var(--font-color-01);
+section#title-text h1 {
   font-size: 3.6vw;
   line-height: 1.5em;
+}
+
+/* PROJECTS-PAGE */
+
+#mosquito-gradient {
+  background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
+}
+
+h1#title-projects {
+  font-size: 2rem;
+  margin-top: 15vw;
+  margin-left: 3vw;
+}
+
+#mosquito-attack {
+  color: var(--font-color-mosquito-01);
 }

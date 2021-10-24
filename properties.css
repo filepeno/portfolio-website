@@ -1,8 +1,12 @@
 :root {
   /* colours */
-  --bg-color-main-01: #7b7b7b;
-  --bg-color-main-02: #df7777;
+  --bg-body: #696969;
+  --bg-gradient-home-01: #7b7b7b;
+  --bg-gradient-home-02: #df7777;
+  --bg-gradient-mosquito-01: #757575;
+  --bg-gradient-mosquito-02: #464646;
   --font-color-01: white;
+  --font-color-mosquito-01: #ff8be0;
   /* fonts */
   --font-heading-01: "Roboto Mono", monospace;
   --font-heading-02: "Josefin Sans", sans-serif;
