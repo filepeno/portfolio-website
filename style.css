@@ -69,8 +69,16 @@ h1#title-projects {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#mosquito-gradient {
-  background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
+.project h2 {
+  font-size: var(--h2-font-size);
+}
+
+.project h3 {
+  font-size: var(--h3-font-size);
+}
+
+p.description {
+  grid-area: 2 / 2 / 3 / 5;
 }
 
 div.info-box {
@@ -90,6 +98,11 @@ div.tag {
   margin-bottom: var(--margin-tag-02);
   border-radius: 2em;
 }
+/* mosquito-attack */
+
+#mosquito-gradient {
+  background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
+}
 
 #mosquito-attack div.tag {
   border: 1px solid var(--font-color-mosquito-01);
@@ -99,14 +112,6 @@ div.tag {
   grid-area: 1 / 3 / 2 / 6;
   max-width: 100%;
   height: auto;
-}
-
-/* #mosquito-attack h2 {
-  font-size: var(--h2-font-size);
-} */
-
-p.description {
-  grid-area: 2 / 2 / 3 / 5;
 }
 
 #mosquito-attack {
