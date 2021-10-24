@@ -76,6 +76,12 @@ div.info-box {
   grid-area: 1 / 1 / 2 / 3;
 }
 
+#mosquito-attack video {
+  grid-area: 1 / 3 / 2 / 6;
+  max-width: 100%;
+  height: auto;
+}
+
 p.description {
   grid-area: 2 / 2 / 3 / 5;
 }
