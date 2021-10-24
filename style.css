@@ -67,6 +67,7 @@ h1#title-projects {
   margin: 0 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem 1rem;
 }
 
 .project h2 {
