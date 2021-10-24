@@ -62,10 +62,17 @@ section#title-text h1 {
 /* PROJECTS-PAGE */
 
 h1#title-projects {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-top: 15vw;
-  margin-left: 3vw;
+  margin-left: 2rem;
   margin-bottom: 10vw;
+  width: 70%;
+}
+
+div.divider-line {
+  height: 1px;
+  width: 70vw;
+  margin: 2rem auto 4rem;
 }
 
 .project {
@@ -109,6 +116,10 @@ div.tag {
   border-radius: 2em;
 }
 /* mosquito-attack */
+
+#mosquito-divider {
+  background-color: var(--font-color-mosquito-01);
+}
 
 #mosquito-gradient {
   background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
