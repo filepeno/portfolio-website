@@ -19,7 +19,8 @@ h1 {
 h2,
 h3,
 h4,
-div.tag {
+div.tag,
+p {
   font-family: var(--font-heading-02);
   font-weight: 200;
 }
@@ -55,14 +56,28 @@ section#title-text h1 {
 
 /* PROJECTS-PAGE */
 
-#mosquito-gradient {
-  background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
-}
-
 h1#title-projects {
   font-size: 2rem;
   margin-top: 15vw;
   margin-left: 3vw;
+  margin-bottom: 10vw;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#mosquito-gradient {
+  background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
+}
+
+div.info-box {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+p.description {
+  grid-area: 2 / 2 / 3 / 5;
 }
 
 #mosquito-attack {
