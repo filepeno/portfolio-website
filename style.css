@@ -8,6 +8,8 @@
 
 body {
   background-color: var(--bg-body);
+  font-family: var(--font-heading-02);
+  color: var(--font-color-01);
 }
 
 nav ul {
@@ -58,6 +60,13 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
 }
 
 /* HOME-PAGE */
