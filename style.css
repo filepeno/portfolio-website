@@ -73,11 +73,11 @@ h1#title-projects {
 div.divider-line {
   height: 1px;
   width: 70vw;
-  margin: 2rem auto 4rem;
+  margin: 0 auto 3rem auto;
 }
 
 .project {
-  margin: 0 2rem;
+  padding: 6rem 2rem 0 2rem;
 }
 
 div.left-grid,
@@ -164,6 +164,19 @@ div.tag {
 }
 
 /* BYU studio */
+
+#byu-studio {
+  color: var(--font-color-byu-01);
+  background: linear-gradient(var(--bg-gradient-byu-01), var(--bg-gradient-byu-02));
+}
+
+#byu-studio div.divider-line {
+  background-color: var(--font-color-byu-01);
+}
+
+#byu-studio div.tag {
+  border: 1px solid var(--font-color-byu-01);
+}
 
 div#byu-video-wrapper {
   position: relative;
