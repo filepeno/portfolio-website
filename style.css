@@ -10,6 +10,31 @@ body {
   background-color: var(--bg-body);
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-family: var(--font-heading-02);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--font-color-01);
+}
+
+a:visited {
+  color: var(--font-color-01);
+}
+
+.logo {
+  width: 4rem;
+  height: auto;
+}
+
 h1 {
   font-family: var(--font-heading-01);
   font-weight: 100;
