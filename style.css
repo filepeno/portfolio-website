@@ -56,6 +56,14 @@ p {
   font-weight: 200;
 }
 
+h4 {
+  margin-bottom: var(--margin-02);
+}
+
+p {
+  margin-bottom: var(--margin-01);
+}
+
 img,
 video {
   max-width: 100%;
@@ -149,7 +157,7 @@ div.right-grid .hero {
   grid-area: 1 / 1 / 2 / 4;
 }
 
-p.description {
+div.description {
   grid-area: 2 / 2 / 3 / 5;
   margin-bottom: 3rem;
 }
@@ -167,8 +175,8 @@ div.tags {
 div.tag {
   border: 1px solid var(--font-color-01);
   padding: var(--padding-tag-02) var(--padding-tag-01);
-  margin-right: var(--margin-tag-01);
-  margin-bottom: var(--margin-tag-02);
+  margin-right: var(--margin-01);
+  margin-bottom: var(--margin-02);
   border-radius: 2em;
 }
 
