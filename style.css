@@ -183,13 +183,44 @@ div.tag {
 
 div.screenshots {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 
-div.screenshots img {
+/* div.screenshots img {
   max-width: 30vw;
   height: auto;
+} */
+
+/* PROJECTS - MEDIA QUERIES */
+
+@media screen and (max-width: 975px) {
+  div.left-grid div.info-box,
+  div.right-grid div.info-box {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  div.right-grid .hero,
+  div.left-grid .hero {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+
+  div.description {
+    grid-area: 3 / 2 / 4 / 5;
+  }
+
+  div.screenshots {
+    grid-area: 4 / 1 / 5 / 6;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  div.description {
+    grid-area: 3 / 1 / 4 / 6;
+  }
+
+  div.screenshots {
+    flex-direction: column;
+  }
 }
 
 /* mosquito-attack */
@@ -240,7 +271,7 @@ iframe {
   height: 100%;
 }
 
-#byu-studio div.screenshots img {
+#byu-studio div.screenshots figure {
   margin: 0 4px 10px 4px;
-  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75); */
 }
