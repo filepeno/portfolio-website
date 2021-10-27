@@ -37,7 +37,7 @@ a:visited {
 }
 
 .logo {
-  width: 4rem;
+  width: 3.5rem;
   height: auto;
 }
 
@@ -76,6 +76,12 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 10rem;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 3rem;
+  }
 }
 
 /* HOME-PAGE */
