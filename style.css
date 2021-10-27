@@ -116,6 +116,12 @@ section#title-text h1 {
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 900px) {
+  section#hero-svg svg {
+    width: 100%;
+  }
+}
+
 /* PROJECTS-PAGE */
 
 h1#title-projects {
