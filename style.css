@@ -114,6 +114,7 @@ g#shapes > * {
 
 section#title-text {
   position: absolute;
+  width: 70%;
   top: -2vw;
   left: 25vw;
 }
@@ -126,6 +127,11 @@ section#title-text h1 {
 @media screen and (max-width: 900px) {
   section#hero-svg svg {
     width: 100%;
+  }
+
+  section#title-text {
+    top: -5vw;
+    left: 22vw;
   }
 
   section#title-text h1 {
