@@ -88,6 +88,15 @@ main {
   background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02));
 } */
 
+section#hero-svg {
+  display: flex;
+}
+
+section#hero-svg svg {
+  width: 85%;
+  margin: 5vw auto;
+}
+
 g#me {
   pointer-events: none;
 }
