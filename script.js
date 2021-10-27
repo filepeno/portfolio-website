@@ -94,9 +94,17 @@ function resizeSvgViewBox(size) {
   switch (size) {
     case "small":
       svg.setAttribute("viewBox", "370 0 290 545");
+      stopTrackingMouseOverOnShapes();
       break;
     case "large":
       svg.setAttribute("viewBox", "0 0 842 545");
       break;
   }
+}
+
+function stopTrackingMouseOverOnShapes() {
+  console.log("stopTracking");
+  HTML.shapes.forEach((shape) => {
+    shape.removeEventListener("mouseover", getShape);
+  });
 }
