@@ -12,7 +12,7 @@ async function loadSvg() {
   console.log("DOM loaded");
   const heroSvg = await fetch("assets/img/portfolio_home-page_graphic-03-01.svg");
   const heroSvgText = await heroSvg.text();
-  document.querySelector("section#hero").innerHTML = heroSvgText;
+  document.querySelector("section#hero-svg").innerHTML = heroSvgText;
   startDelegator();
 }
 
@@ -93,10 +93,10 @@ function resizeSvgViewBox(size) {
   //   svg.setAttribute("viewBox", "290 0 400 700");
   switch (size) {
     case "small":
-      svg.setAttribute("viewBox", "290 0 400 700");
+      svg.setAttribute("viewBox", "370 0 290 545");
       break;
     case "large":
-      svg.setAttribute("viewBox", "0 0 842 651.04");
+      svg.setAttribute("viewBox", "0 0 842 545");
       break;
   }
 }
