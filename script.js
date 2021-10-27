@@ -93,10 +93,10 @@ function resizeSvgViewBox(size) {
   //   svg.setAttribute("viewBox", "290 0 400 700");
   switch (size) {
     case "small":
-      svg.setAttribute("viewBox", "350 0 360 600");
+      svg.setAttribute("viewBox", "370 0 290 545");
       break;
     case "large":
-      svg.setAttribute("viewBox", "0 0 842 651.04");
+      svg.setAttribute("viewBox", "0 0 842 545");
       break;
   }
 }
