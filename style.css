@@ -114,9 +114,13 @@ g#shapes > * {
 
 section#title-text {
   position: absolute;
-  width: 70%;
+  width: 72%;
   top: -2vw;
   left: 25vw;
+}
+
+section#title-text h1 span {
+  display: block;
 }
 
 section#title-text h1 {
@@ -131,7 +135,7 @@ section#title-text h1 {
 
   section#title-text {
     top: -5vw;
-    left: 22vw;
+    left: 15vw;
   }
 
   section#title-text h1 {
