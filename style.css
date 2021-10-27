@@ -17,7 +17,7 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 var(--side-margin) 5rem var(--side-margin);
+  margin: 0 var(--side-margin);
   padding-top: 1rem;
 }
 
@@ -81,6 +81,7 @@ footer {
 /* HOME-PAGE */
 
 main {
+  margin-top: 6rem;
   position: relative;
 }
 
@@ -93,7 +94,7 @@ section#hero-svg {
 }
 
 section#hero-svg svg {
-  width: 85%;
+  width: 90%;
   margin: 5vw auto;
 }
 
@@ -107,12 +108,12 @@ g#shapes > * {
 
 section#title-text {
   position: absolute;
-  top: 0vw;
-  left: 10vw;
+  top: -2vw;
+  left: 25vw;
 }
 
 section#title-text h1 {
-  font-size: 3.6vw;
+  font-size: 3vw;
   line-height: 1.5em;
 }
 
