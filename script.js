@@ -115,6 +115,6 @@ function makeShapesVisible() {
   console.log("makeVisible");
   HTML.shapes.forEach((shape) => {
     shape.style = "";
-    shape.style.opacity = "70%";
+    shape.style.opacity = "90%";
   });
 }
