@@ -207,6 +207,9 @@ div.description {
 }
 
 div.screenshots {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
   grid-area: 3 / 1 / 4 / 6;
   position: relative;
   z-index: 2;
@@ -225,12 +228,6 @@ div.tag {
   margin-right: var(--margin-01);
   margin-bottom: var(--margin-02);
   border-radius: 2em;
-}
-
-div.screenshots {
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-around;
 }
 
 /* div.screenshots img {
