@@ -327,3 +327,18 @@ iframe {
   margin: 0 4px 10px 4px;
   /* box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75); */
 }
+
+/* Silfen */
+
+#silfen {
+  color: var(--font-color-silfen-01);
+  background: var(--bg-color-silfen-01);
+}
+
+#silfen div.divider-line {
+  background-color: var(--font-color-silfen-01);
+}
+
+#silfen div.tag {
+  border: 1px solid var(--font-color-silfen-01);
+}
