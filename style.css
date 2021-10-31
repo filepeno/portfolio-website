@@ -166,7 +166,7 @@ div.divider-line {
 }
 
 .project {
-  padding: 6rem var(--side-padding) 0 var(--side-padding);
+  padding: 8rem var(--side-padding) 0 var(--side-padding);
   position: relative;
 }
 
@@ -203,6 +203,7 @@ div.right-grid .hero {
 
 div.description {
   grid-area: 2 / 2 / 3 / 5;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -274,6 +275,14 @@ div.tag {
 
   div.screenshots {
     flex-direction: column;
+    margin-bottom: -6rem;
+  }
+
+  #byu-studio div.screenshots {
+    margin-bottom: -3rem;
+  }
+
+  #mosquito-attack div.screenshots {
     margin-bottom: -6rem;
   }
 }
