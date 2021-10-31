@@ -185,6 +185,10 @@ div.right-grid {
   font-size: var(--h3-font-size);
 }
 
+.info-box {
+  align-self: center;
+}
+
 div.left-grid div.info-box {
   grid-area: 1 / 1 / 2 / 3;
 }
