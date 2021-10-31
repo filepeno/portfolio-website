@@ -167,6 +167,7 @@ div.divider-line {
 
 .project {
   padding: 6rem var(--side-padding) 0 var(--side-padding);
+  position: relative;
 }
 
 div.left-grid,
@@ -207,6 +208,9 @@ div.description {
 
 div.screenshots {
   grid-area: 3 / 1 / 4 / 6;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -3rem;
 }
 
 div.tags {
