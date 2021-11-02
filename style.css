@@ -182,6 +182,18 @@ section#title-text h1 {
   section#title-text h1 {
     font-size: 5vw;
   }
+
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  #about figure {
+    margin-right: 0;
+    margin-top: 10rem;
+    margin-bottom: -4rem;
+    width: 40vw;
+    justify-self: center;
+  }
 }
 
 /* PROJECTS-PAGE */
