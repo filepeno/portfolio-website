@@ -63,6 +63,7 @@ h4 {
 
 p {
   margin-bottom: var(--margin-01);
+  max-width: 65ch;
 }
 
 img,
