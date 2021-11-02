@@ -130,14 +130,19 @@ section#title-text h1 {
 
 #about {
   display: grid;
-  grid-template-columns: 24vw 1fr;
-  margin: 0 7vw;
+  grid-template-columns: 20vw 1fr;
+  margin: 0 10vw;
   gap: 2rem;
+}
+
+#about h2 {
+  text-transform: uppercase;
 }
 
 #about figure {
   margin-right: -4rem;
   z-index: 0;
+  align-self: center;
 }
 
 #profile-picture {
@@ -155,7 +160,7 @@ section#title-text h1 {
 }
 
 #about-text span {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1rem;
 }
 
@@ -178,21 +183,40 @@ section#title-text h1 {
   }
 }
 
+@media screen and (max-width: 700px) {
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  #about h2 {
+    text-align: end;
+  }
+
+  #about-text {
+    padding: 2.5rem;
+    padding-top: 9rem;
+  }
+
+  #about figure {
+    margin-left: -12vw;
+    margin-top: 3rem;
+    margin-bottom: -11rem;
+    width: 40vw;
+  }
+}
+
 @media screen and (max-width: 500px) {
   section#title-text h1 {
     font-size: 5vw;
   }
 
-  #about {
-    grid-template-columns: 1fr;
+  #about figure {
+    width: 50vw;
   }
 
-  #about figure {
-    margin-right: 0;
-    margin-top: 10rem;
-    margin-bottom: -4rem;
-    width: 40vw;
-    justify-self: center;
+  #about-text {
+    padding: 1.5rem;
+    padding-top: 9rem;
   }
 }
 
