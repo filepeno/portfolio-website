@@ -188,6 +188,8 @@ div.right-grid {
 
 .info-box {
   align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
 div.left-grid div.info-box {
@@ -257,6 +259,10 @@ div.tag {
   div.description {
     grid-area: 3 / 1 / 4 / -1;
     justify-self: center;
+  }
+
+  div.info-box {
+    text-align: center;
   }
 
   div.screenshots {
