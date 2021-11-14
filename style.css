@@ -229,13 +229,12 @@ div.tags {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+  gap: 0.8rem 1rem;
 }
 
 div.tag {
   border: 1px solid var(--font-color-01);
   padding: var(--padding-tag-02) var(--padding-tag-01);
-  margin-right: var(--margin-01);
-  margin-bottom: var(--margin-02);
   border-radius: 2em;
 }
 
@@ -282,6 +281,16 @@ div.tag {
     margin-bottom: 2rem;
     font-size: 2rem;
   }
+
+  .project h2 {
+    font-size: calc(var(--h2-font-size) / 1.4);
+  }
+
+  div.tags {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
   div.description {
     grid-area: 3 / 1 / 4 / 6;
   }
