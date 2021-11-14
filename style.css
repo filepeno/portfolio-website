@@ -116,7 +116,7 @@ section#title-text {
   position: absolute;
   width: 72%;
   top: -2vw;
-  left: 25vw;
+  left: 12vw;
 }
 
 section#title-text h1 span {
@@ -126,6 +126,7 @@ section#title-text h1 span {
 section#title-text h1 {
   font-size: 3vw;
   line-height: 1.5em;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
