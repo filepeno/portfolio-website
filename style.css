@@ -202,6 +202,7 @@ div.right-grid {
   align-self: center;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 div.left-grid div.info-box {
@@ -283,6 +284,7 @@ div.tag {
 
   div.info-box {
     text-align: center;
+    gap: 0.2rem;
   }
 
   div.screenshots {
