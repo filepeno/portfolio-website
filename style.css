@@ -83,6 +83,9 @@ footer {
   .logo {
     width: 3rem;
   }
+  nav ul {
+    margin: 0 calc(var(--side-margin) / 2);
+  }
 }
 
 /* HOME-PAGE */
