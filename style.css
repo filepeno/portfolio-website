@@ -17,7 +17,7 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 var(--side-margin);
+  margin: 0 var(--side-gutter);
   padding-top: 1rem;
 }
 
@@ -84,7 +84,7 @@ footer {
     width: 3rem;
   }
   nav ul {
-    margin: 0 calc(var(--side-margin) / 2);
+    margin: 0 calc(var(--side-gutter) / 2);
   }
 }
 
@@ -170,7 +170,9 @@ div.divider-line {
 }
 
 .project {
-  padding: 8rem var(--side-padding) 0 var(--side-padding);
+  padding-top: 8rem;
+  padding-left: var(--side-gutter);
+  padding-right: var(--side-gutter);
   position: relative;
 }
 
@@ -277,6 +279,11 @@ div.tag {
 }
 
 @media screen and (max-width: 550px) {
+  .project {
+    padding-left: calc(var(--side-gutter) / 2);
+    padding-right: calc(var(--side-gutter) / 2);
+  }
+
   h1#title-projects {
     margin-top: 4rem;
     margin-bottom: 2rem;
