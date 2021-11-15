@@ -1,6 +1,6 @@
 :root {
   /* colours */
-  --bg-body: #696969;
+  --bg-body: #757575;
   --bg-gradient-home-01: #7b7b7b;
   --bg-gradient-home-02: #df7777;
   --bg-gradient-mosquito-01: #757575;
@@ -21,7 +21,7 @@
   --h2-font-size: 3rem;
   --h3-font-size: calc(var(--h2-font-size) / 2);
   /* margins */
-  --side-margin: 3rem;
+  --side-gutter: 3rem;
   --margin-01: 1rem;
   --margin-02: calc(var(--margin-01) / 2);
   /* paddings */

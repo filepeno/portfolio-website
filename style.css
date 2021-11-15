@@ -17,7 +17,7 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 var(--side-margin);
+  margin: 0 var(--side-gutter);
   padding-top: 1rem;
 }
 
@@ -63,6 +63,7 @@ h4 {
 
 p {
   margin-bottom: var(--margin-01);
+  max-width: 75ch;
 }
 
 img,
@@ -81,6 +82,9 @@ footer {
 @media screen and (max-width: 500px) {
   .logo {
     width: 3rem;
+  }
+  nav ul {
+    margin: 0 calc(var(--side-gutter) / 2);
   }
 }
 
@@ -159,11 +163,11 @@ section#title-text h1 {
 /* PROJECTS-PAGE */
 
 h1#title-projects {
-  font-size: 3rem;
-  margin-top: 10rem;
-  margin-left: var(--side-margin);
-  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  margin: 5rem auto 8rem auto;
+
   width: 70%;
+  text-align: center;
 }
 
 div.divider-line {
@@ -173,7 +177,9 @@ div.divider-line {
 }
 
 .project {
-  padding: 6rem var(--side-padding) 0 var(--side-padding);
+  padding-top: 8rem;
+  padding-left: var(--side-gutter);
+  padding-right: var(--side-gutter);
   position: relative;
 }
 
@@ -190,6 +196,12 @@ div.right-grid {
 
 .project h3 {
   font-size: var(--h3-font-size);
+}
+
+.info-box {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
 div.left-grid div.info-box {
@@ -214,7 +226,9 @@ div.right-grid .hero {
 }
 
 div.description {
-  grid-area: 3 / 2 / 4 / 5;
+  grid-area: 2 / 1 / 3 / -1;
+  justify-self: center;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -224,21 +238,19 @@ div.screenshots {
   justify-content: space-around;
   grid-area: 4 / 1 / 5 / 6;
   position: relative;
-  z-index: 2;
-  margin-bottom: -3rem;
+  margin-bottom: -45px;
 }
 
 div.tags {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+  gap: 0.8rem 1rem;
 }
 
 div.tag {
   border: 1px solid var(--font-color-01);
   padding: var(--padding-tag-02) var(--padding-tag-01);
-  margin-right: var(--margin-01);
-  margin-bottom: var(--margin-02);
   border-radius: 2em;
 }
 
@@ -265,7 +277,12 @@ div.tag {
   }
 
   div.description {
-    grid-area: 4 / 2 / 5 / 5;
+    grid-area: 3 / 1 / 4 / -1;
+    justify-self: center;
+  }
+
+  div.info-box {
+    text-align: center;
   }
 
   div.screenshots {
@@ -275,23 +292,36 @@ div.tag {
   h1#title-projects {
     margin-top: 5rem;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 550px) {
+  .project {
+    padding-left: calc(var(--side-gutter) / 2);
+    padding-right: calc(var(--side-gutter) / 2);
+  }
+
   h1#title-projects {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
+  .project h2 {
+    font-size: calc(var(--h2-font-size) / 1.4);
+  }
+
+  div.tags {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
   div.description {
     grid-area: 4 / 1 / 5 / -1;
   }
 
   div.screenshots {
     flex-direction: column;
-    margin-bottom: -6rem;
   }
 }
 
@@ -301,7 +331,7 @@ div.tag {
   background-color: var(--font-color-mosquito-01);
 }
 
-#mosquito-gradient {
+#mosquito-attack {
   background: linear-gradient(var(--bg-gradient-mosquito-01), var(--bg-gradient-mosquito-02));
 }
 
@@ -312,6 +342,10 @@ div.tag {
 #mosquito-attack {
   color: var(--font-color-mosquito-01);
   padding-top: 0;
+}
+
+#mosquito-attack div.screenshots {
+  z-index: 1;
 }
 
 /* BYU studio */
@@ -341,11 +375,16 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 #byu-studio div.screenshots figure {
   margin: 0 4px 10px 4px;
   /* box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75); */
+}
+
+#byu-studio div.screenshots {
+  z-index: 2;
 }
 
 /* Silfen */
