@@ -133,29 +133,37 @@ section#title-text h1 {
 
 .about {
   display: grid;
-  grid-template-columns: 20vw 1fr;
+  grid-template-columns: 1fr 2fr;
   margin: 0 10vw;
   gap: 2rem;
 }
 
 .about h2 {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .about figure {
-  /* margin-right: -4rem; */
-  z-index: 1;
-  align-self: center;
+  margin-top: -10px;
+  align-self: auto;
+  max-width: 270px;
+  justify-self: end;
 }
 
 /* .profile-picture {
 } */
+
+.about-and-title {
+  align-self: center;
+  justify-self: center;
+}
 
 .about-text {
   position: relative;
   align-self: center;
   padding: 3.5rem;
   background-color: var(--bg-color-01);
+  max-width: 75ch;
 }
 
 .about-text::after {
