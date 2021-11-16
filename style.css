@@ -129,35 +129,36 @@ section#title-text h1 {
   line-height: 1.5em;
 }
 
-#about {
+/* ABOUT  */
+
+.about {
   display: grid;
   grid-template-columns: 20vw 1fr;
   margin: 0 10vw;
   gap: 2rem;
 }
 
-#about h2 {
+.about h2 {
   text-transform: uppercase;
 }
 
-#about figure {
-  margin-right: -4rem;
+.about figure {
+  /* margin-right: -4rem; */
   z-index: 1;
   align-self: center;
 }
 
-#profile-picture {
-  border-radius: 50%;
-}
+/* .profile-picture {
+} */
 
-#about-text {
+.about-text {
   position: relative;
   align-self: center;
   padding: 3.5rem;
   background-color: var(--bg-color-01);
 }
 
-#about-text::after {
+.about-text::after {
   box-sizing: inherit;
   content: "";
   position: absolute;
@@ -171,16 +172,16 @@ section#title-text h1 {
   height: 100%;
 }
 
-#about-text p {
+.about-text p {
   font-size: 1.1rem;
 }
 
-#about-text span {
+.about-text span {
   font-size: 2rem;
   line-height: 1rem;
 }
 
-#about-text p:last-of-type {
+.about-text p:last-of-type {
   margin: 0;
 }
 
