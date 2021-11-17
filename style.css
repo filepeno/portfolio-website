@@ -203,11 +203,6 @@ section#title-text h1 {
   font-size: 1.1rem;
 }
 
-.about-text span {
-  font-size: 2rem;
-  line-height: 1rem;
-}
-
 .about-text p:last-of-type {
   margin: 0;
 }
