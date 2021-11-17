@@ -239,14 +239,14 @@ section#title-text h1 {
 
   .about-text {
     padding: 2.5rem;
-    padding-top: 9rem;
+    padding-top: 11rem;
   }
 
   .about-image {
     justify-self: start;
     margin-top: 3rem;
-    margin-bottom: -7rem;
-    width: 40vw;
+    margin-bottom: -11rem;
+    width: 33vw;
   }
 
   .about figure::after {
