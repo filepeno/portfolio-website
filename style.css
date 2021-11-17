@@ -99,7 +99,7 @@ main {
 
 main::after {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background: var(--bg-color-02);
