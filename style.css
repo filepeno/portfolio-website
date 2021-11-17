@@ -7,10 +7,10 @@
 /* GENERAL */
 
 body {
-  /* background-color: var(--bg-body); */
+  background-color: var(--bg-body);
   font-family: var(--font-heading-02);
   color: var(--font-color-01);
-  background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02));
+  /* background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02)); */
   overflow-x: hidden;
 }
 
