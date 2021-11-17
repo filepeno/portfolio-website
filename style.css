@@ -109,6 +109,18 @@ main::after {
   transform: translate(-30vw, 45vw) rotate(28deg);
 }
 
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -10;
+  width: 200vw;
+  height: 10px;
+  transform: translate(-30vw, 40vw) rotate(-30deg);
+}
+
 section#hero-svg {
   display: flex;
 }
@@ -242,8 +254,12 @@ section#title-text h1 {
 }
 
 @media screen and (max-width: 700px) {
+  main::before {
+    height: 5px;
+  }
   .about {
     grid-template-columns: 1fr;
+    margin-top: 2rem;
   }
 
   .about h2 {
@@ -269,6 +285,11 @@ section#title-text h1 {
 }
 
 @media screen and (max-width: 500px) {
+  main::after,
+  main::before {
+    display: none;
+  }
+
   section#title-text {
     width: 80%;
     left: 10vw;
