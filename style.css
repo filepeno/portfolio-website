@@ -330,8 +330,7 @@ body.projects {
 
 h1#title-projects {
   font-size: 2.5rem;
-  margin: 5rem auto 8rem auto;
-
+  margin: 11rem auto 5rem auto;
   width: 70%;
   text-align: center;
 }
@@ -446,7 +445,7 @@ div.tag {
   }
 
   h1#title-projects {
-    margin-top: 5rem;
+    margin-top: 9rem;
     margin-bottom: 3rem;
   }
 }
@@ -458,7 +457,7 @@ div.tag {
   }
 
   h1#title-projects {
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
   }
