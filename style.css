@@ -134,7 +134,7 @@ section#title-text h1 {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 0 10vw;
+  margin: 5rem 10vw;
   gap: 2rem;
 }
 
