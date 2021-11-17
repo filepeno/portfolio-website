@@ -164,7 +164,8 @@ section#title-text h1 {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 5rem 10vw;
+  margin: 0 10vw;
+  padding-top: 5rem;
   gap: 2rem;
 }
 
@@ -263,7 +264,7 @@ section#title-text h1 {
   }
   .about {
     grid-template-columns: 1fr;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .about h2 {
@@ -323,10 +324,6 @@ section#title-text h1 {
 }
 
 /* PROJECTS-PAGE */
-
-body.projects {
-  background: var(--bg-gradient-mosquito-01);
-}
 
 h1#title-projects {
   font-size: 2.5rem;
