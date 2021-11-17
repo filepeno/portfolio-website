@@ -105,9 +105,8 @@ main::after {
   background: var(--bg-color-02);
   z-index: -10;
   width: 200vw;
-  height: 3px;
-  rotate: 25deg;
-  transform: translate(0, 50vw);
+  height: 5px;
+  transform: translate(-30vw, 45vw) rotate(28deg);
 }
 
 section#hero-svg {
