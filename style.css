@@ -188,7 +188,6 @@ section#title-text h1 {
 
 .about figure {
   position: relative;
-  max-width: 270px;
 }
 
 .about figure::after {
