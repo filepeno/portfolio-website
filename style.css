@@ -136,6 +136,8 @@ section#hero-svg svg {
 
 g#me {
   pointer-events: none;
+  transform: translate(2.5rem, 1.2rem) scale(93%);
+  transform-origin: center center;
 }
 
 g#shapes > * {
