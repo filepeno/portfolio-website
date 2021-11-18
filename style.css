@@ -103,6 +103,7 @@ footer {
 main {
   margin-top: 6rem;
   position: relative;
+  z-index: 0;
 }
 
 main::after {
