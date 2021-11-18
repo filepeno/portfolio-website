@@ -349,6 +349,7 @@ div.right-grid {
 
 .project h3 {
   font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
 }
 
 .link {
