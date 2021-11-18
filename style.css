@@ -6,6 +6,10 @@
 
 /* GENERAL */
 
+html {
+  background: var(--bg-color-02);
+}
+
 body {
   background-color: var(--bg-body);
   font-family: var(--font-heading-02);
