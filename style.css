@@ -171,7 +171,8 @@ section#title-text h1 {
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 5rem 10vw;
+  margin: 0 10vw;
+  padding-top: 5rem;
   gap: 2rem;
 }
 
@@ -256,7 +257,7 @@ section#title-text h1 {
   }
   .about {
     grid-template-columns: 1fr;
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .about h2 {
@@ -315,14 +316,9 @@ section#title-text h1 {
 
 /* PROJECTS-PAGE */
 
-body.projects {
-  background: var(--bg-gradient-mosquito-01);
-}
-
 h1#title-projects {
   font-size: 2.5rem;
-  margin: 5rem auto 8rem auto;
-
+  margin: 11rem auto 5rem auto;
   width: 70%;
   text-align: center;
 }
@@ -385,11 +381,10 @@ div.description {
 
 div.screenshots {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
   grid-area: 3 / 1 / 4 / 6;
-  position: relative;
-  margin-bottom: -45px;
+  transform: translateY(2rem);
+  z-index: 2;
 }
 
 div.tags {
@@ -404,11 +399,6 @@ div.tag {
   padding: var(--padding-tag-02) var(--padding-tag-01);
   border-radius: 2em;
 }
-
-/* div.screenshots img {
-  max-width: 30vw;
-  height: auto;
-} */
 
 /* PROJECTS - MEDIA QUERIES */
 
@@ -437,7 +427,7 @@ div.tag {
   }
 
   h1#title-projects {
-    margin-top: 5rem;
+    margin-top: 9rem;
     margin-bottom: 3rem;
   }
 }
@@ -449,7 +439,7 @@ div.tag {
   }
 
   h1#title-projects {
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-bottom: 2rem;
     font-size: 1.5rem;
   }
@@ -487,15 +477,12 @@ div.tag {
   padding-top: 0;
 }
 
-#mosquito-attack div.screenshots {
-  z-index: 1;
-}
-
 /* BYU studio */
 
 #byu-studio {
   color: var(--font-color-byu-01);
-  background: linear-gradient(var(--bg-gradient-byu-01), var(--bg-gradient-byu-02));
+  /* background: linear-gradient(var(--bg-gradient-byu-01), var(--bg-gradient-byu-02)); */
+  background-color: var(--bg-color-byu);
 }
 
 #byu-studio div.divider-line {
@@ -526,15 +513,12 @@ iframe {
   /* box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75); */
 }
 
-#byu-studio div.screenshots {
-  z-index: 2;
-}
-
 /* Silfen */
 
 #silfen {
   color: var(--font-color-silfen-01);
   background: var(--bg-color-silfen-01);
+  padding-bottom: 6rem;
 }
 
 #silfen div.divider-line {
