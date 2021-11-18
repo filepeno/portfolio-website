@@ -390,11 +390,10 @@ div.description {
 
 div.screenshots {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
   grid-area: 3 / 1 / 4 / 6;
-  position: relative;
-  margin-bottom: -45px;
+  transform: translateY(2rem);
+  z-index: 2;
 }
 
 div.tags {
@@ -409,11 +408,6 @@ div.tag {
   padding: var(--padding-tag-02) var(--padding-tag-01);
   border-radius: 2em;
 }
-
-/* div.screenshots img {
-  max-width: 30vw;
-  height: auto;
-} */
 
 /* PROJECTS - MEDIA QUERIES */
 
@@ -492,10 +486,6 @@ div.tag {
   padding-top: 0;
 }
 
-#mosquito-attack div.screenshots {
-  z-index: 1;
-}
-
 /* BYU studio */
 
 #byu-studio {
@@ -530,10 +520,6 @@ iframe {
 #byu-studio div.screenshots figure {
   margin: 0 4px 10px 4px;
   /* box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75); */
-}
-
-#byu-studio div.screenshots {
-  z-index: 2;
 }
 
 /* Silfen */
