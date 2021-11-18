@@ -527,6 +527,7 @@ iframe {
 #silfen {
   color: var(--font-color-silfen-01);
   background: var(--bg-color-silfen-01);
+  padding-bottom: 6rem;
 }
 
 #silfen div.divider-line {
