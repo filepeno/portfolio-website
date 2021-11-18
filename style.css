@@ -358,10 +358,6 @@ div.right-grid {
   gap: 0.5rem;
 }
 
-.iconify {
-  color: white;
-}
-
 .info-box {
   align-self: center;
   display: flex;
