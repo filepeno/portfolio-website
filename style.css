@@ -226,10 +226,15 @@ section#title-text h1 {
   box-shadow: 35px 20px 0px 5px var(--about-shadow-color);
 }
 
-.about span {
+.greeting {
   font-family: var(--font-heading-01);
   font-size: 1.5rem;
   font-weight: 100;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .about-text p {
