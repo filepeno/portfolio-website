@@ -1,5 +1,7 @@
 "use strict";
 
+import { playVideoOnMouseover, pauseVideoOnMouseout } from "./video.js";
+
 window.addEventListener("DOMContentLoaded", loadSvg);
 
 const HTML = {
@@ -20,6 +22,8 @@ function startDelegator() {
   addShapesToHtmlObject();
   makeShapesTransparent();
   trackMouseOverOnShapes();
+  playVideoOnMouseover();
+  pauseVideoOnMouseout();
   trackMediaScreenSize();
 }
 
@@ -99,8 +103,7 @@ function resizeSvgViewBox(size) {
       break;
     case "large":
       svg.setAttribute("viewBox", "0 0 842 645");
-      makeShapesTransparent();
-      trackMouseOverOnShapes();
+      startDelegator();
       break;
   }
 }

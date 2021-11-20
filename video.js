@@ -1,8 +1,8 @@
 "use strict";
 
+export { playVideoOnMouseover, pauseVideoOnMouseout };
+
 const video = document.querySelector("video.hero");
-playVideoOnMouseover();
-pauseVideoOnMouseout();
 
 function playVideoOnMouseover() {
   video.addEventListener("mouseover", (e) => {
