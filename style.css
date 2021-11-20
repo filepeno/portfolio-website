@@ -366,6 +366,15 @@ div.right-grid {
   gap: 0.5rem;
 }
 
+video.hero {
+  transition: all 0.1s linear;
+}
+
+.video-mouseover {
+  transform: scale(1.02) translate(-3px, -3px);
+  box-shadow: 2px 2px 26px -8px #ff70db;
+}
+
 div.left-grid div.info-box {
   grid-area: 1 / 1 / 2 / 3;
 }

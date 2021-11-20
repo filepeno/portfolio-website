@@ -1,15 +1,19 @@
 "use strict";
+
+const video = document.querySelector("video.hero");
 playVideoOnMouseover();
 pauseVideoOnMouseout();
 
 function playVideoOnMouseover() {
-  document.querySelector("video.hero").addEventListener("mouseover", (e) => {
+  video.addEventListener("mouseover", (e) => {
     e.currentTarget.play();
+    e.currentTarget.classList.add("video-mouseover");
   });
 }
 
 function pauseVideoOnMouseout() {
-  document.querySelector("video.hero").addEventListener("mouseout", (e) => {
+  video.addEventListener("mouseout", (e) => {
     e.currentTarget.pause();
+    e.currentTarget.classList.remove("video-mouseover");
   });
 }
