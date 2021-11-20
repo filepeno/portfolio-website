@@ -371,7 +371,7 @@ video.hero {
 }
 
 .video-mouseover {
-  transform: scale(1.02) translate(-3px, -3px);
+  transform: scale(1.02);
   box-shadow: 2px 2px 26px -8px #ff70db;
 }
 
