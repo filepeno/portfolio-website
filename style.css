@@ -366,7 +366,7 @@ div.right-grid {
   gap: 0.5rem;
 }
 
-video.hero {
+.hero-video {
   transition: all 0.1s linear;
 }
 

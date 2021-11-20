@@ -2,7 +2,7 @@
 
 export { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo };
 
-const video = document.querySelector("video.hero");
+const video = document.querySelector(".hero-video");
 
 function playVideoOnMouseover() {
   video.addEventListener("mouseover", (e) => {
