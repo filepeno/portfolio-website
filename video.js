@@ -1,6 +1,6 @@
 "use strict";
 
-export { playVideoOnMouseover, pauseVideoOnMouseout };
+export { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo };
 
 const video = document.querySelector("video.hero");
 
@@ -16,4 +16,8 @@ function pauseVideoOnMouseout() {
     e.currentTarget.pause();
     e.currentTarget.classList.remove("video-mouseover");
   });
+}
+
+function autoplayVideo() {
+  video.setAttribute("autoplay", true);
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-import { playVideoOnMouseover, pauseVideoOnMouseout } from "./video.js";
+import { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo } from "./video.js";
 
 window.addEventListener("DOMContentLoaded", loadSvg);
 
@@ -100,6 +100,7 @@ function resizeSvgViewBox(size) {
       svg.setAttribute("viewBox", "370 0 290 645");
       stopTrackingMouseOverOnShapes();
       makeShapesVisible();
+      autoplayVideo();
       break;
     case "large":
       svg.setAttribute("viewBox", "0 0 842 645");
