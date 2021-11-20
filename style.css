@@ -372,7 +372,9 @@ video.hero {
 
 .video-mouseover {
   transform: scale(1.02);
-  box-shadow: 2px 2px 26px -8px #ff70db;
+  -webkit-box-shadow: 1px -3px 35px -9px var(--font-color-mosquito-01);
+  -moz-box-shadow: 1px -3px 35px -9px var(--font-color-mosquito-01);
+  box-shadow: 1px -3px 35px -9px var(--font-color-mosquito-01);
 }
 
 div.left-grid div.info-box {
