@@ -366,8 +366,13 @@ div.right-grid {
   gap: 0.5rem;
 }
 
-.hero-video {
+.hero-video,
+.hero-image {
   transition: all 0.1s linear;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
 }
 
 .video-mouseover {
