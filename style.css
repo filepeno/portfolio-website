@@ -15,7 +15,7 @@ body {
   font-family: var(--font-heading-02);
   color: var(--font-color-01);
   /* background: linear-gradient(var(--bg-gradient-home-01), var(--bg-gradient-home-02)); */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 header {
@@ -106,7 +106,7 @@ main {
   z-index: 0;
 }
 
-main::after {
+/* main::after {
   content: "";
   position: absolute;
   top: 0;
@@ -128,7 +128,7 @@ main::before {
   width: 200vw;
   height: 10px;
   transform: translate(-30vw, 40vw) rotate(-30deg);
-}
+} */
 
 section#hero-svg {
   display: flex;
