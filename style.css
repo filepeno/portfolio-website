@@ -21,7 +21,7 @@ body {
 .main-nav {
   position: fixed;
   z-index: 1;
-  background: var(--bg-body);
+  background: rgb(117, 117, 117, 0.7);
   top: 0;
   left: 0;
   right: 0;
@@ -40,7 +40,7 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   margin: 0 var(--side-gutter);
-  padding-top: 1rem;
+  padding: 0.7rem 0 0.5rem 0;
 }
 
 li {
