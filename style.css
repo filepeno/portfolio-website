@@ -43,6 +43,11 @@ nav ul {
   padding: 0.7rem 0 0.5rem 0;
 }
 
+nav ul div {
+  display: flex;
+  gap: 1.2rem;
+}
+
 li {
   list-style: none;
   font-family: var(--font-heading-02);
@@ -107,6 +112,11 @@ footer {
   }
   nav ul {
     margin: 0 calc(var(--side-gutter) / 2);
+    font-size: 0.8rem;
+  }
+
+  nav ul div {
+    gap: 1rem;
   }
 }
 
