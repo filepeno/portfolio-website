@@ -89,7 +89,7 @@ h4 {
 }
 
 p {
-  margin-bottom: var(--margin-01);
+  /* margin-bottom: var(--margin-01); */
   max-width: 75ch;
 }
 
@@ -101,9 +101,33 @@ video {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem;
   align-items: center;
-  height: 10rem;
+}
+
+.footer-logo {
+  width: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.some {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.copyright {
+  opacity: 70%;
 }
 
 @media screen and (max-width: 500px) {
