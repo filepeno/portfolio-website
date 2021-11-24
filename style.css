@@ -305,9 +305,6 @@ strong {
   section#title-text h1 {
     font-size: 4vw;
   }
-}
-
-@media screen and (max-width: 700px) {
   main::before {
     height: 5px;
   }
@@ -323,6 +320,7 @@ strong {
   .about-text {
     padding: 2.5rem;
     padding-top: 11rem;
+    padding-bottom: 4rem;
   }
 
   .about-image {
@@ -355,14 +353,19 @@ strong {
     margin-top: 18vw;
   }
 
+  .about {
+    margin: 0;
+  }
+
   .about figure {
-    width: 35vw;
+    width: 45vw;
   }
 
   .about-text {
     padding: 1.5rem;
     padding-top: 9rem;
-    box-shadow: 18px 30px 0px 5px var(--about-shadow-color);
+    padding-bottom: 4rem;
+    box-shadow: 0px 3px 0 0 var(--about-shadow-color);
   }
 
   .about h2 {
