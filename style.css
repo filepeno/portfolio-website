@@ -6,9 +6,9 @@
 
 /* GENERAL */
 
-/* html {
+html {
   background: var(--bg-color-02);
-} */
+}
 
 body {
   background-color: var(--bg-body);
@@ -152,7 +152,6 @@ address {
 /* HOME-PAGE */
 
 main {
-  margin-top: 10rem;
   position: relative;
   z-index: 0;
 }
@@ -200,21 +199,17 @@ g#shapes > * {
   opacity: 0;
 }
 
-section#title-text {
-  position: absolute;
-  width: 72%;
-  top: -2vw;
-  left: 12vw;
-}
-
-section#title-text h1 span {
-  display: block;
-}
-
-section#title-text h1 {
-  font-size: 3vw;
+h1.title-text {
+  font-size: 2.5rem;
   line-height: 1.5em;
   text-align: center;
+  padding-top: 4rem;
+  transform: translateY(7rem);
+  margin: 0 1.5rem;
+}
+
+h1.title-text span {
+  display: block;
 }
 
 /* ABOUT  */
@@ -293,18 +288,21 @@ strong {
   margin: 0;
 }
 
+@media screen and (max-width: 1100px) {
+  h1.title-text {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  h1.title-text {
+    font-size: 1.5rem;
+    transform: translateY(4rem);
+  }
   section#hero-svg svg {
     width: 100%;
   }
 
-  section#title-text {
-    top: -5vw;
-  }
-
-  section#title-text h1 {
-    font-size: 4vw;
-  }
   main::before {
     height: 5px;
   }
@@ -337,18 +335,20 @@ strong {
 }
 
 @media screen and (max-width: 500px) {
+  h1.title-text {
+    padding-top: 6rem;
+    transform: translateY(3rem);
+  }
+  h1.title-text span:nth-child(2),
+  h1.title-text span:nth-child(3) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   main::after,
   main::before {
     display: none;
   }
 
-  section#title-text {
-    width: 80%;
-    left: 10vw;
-  }
-  section#title-text h1 {
-    font-size: 5vw;
-  }
   section#hero-svg svg {
     margin-top: 18vw;
   }
