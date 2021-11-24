@@ -126,6 +126,11 @@ address {
   margin-top: 0.3rem;
 }
 
+.some svg:hover {
+  transform: scale(1.2);
+  transition: all 0.05s linear;
+}
+
 .copyright {
   opacity: 70%;
 }
