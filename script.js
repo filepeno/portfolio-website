@@ -1,8 +1,10 @@
 "use strict";
 
+import { onReady, setVisible } from "./js/components/loading.js";
 import { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo } from "./video.js";
 
 window.addEventListener("DOMContentLoaded", loadSvg);
+window.onload = () => setVisible("body", true);
 
 const HTML = {
   shapes: [],

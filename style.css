@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  visibility: hidden;
   background-color: var(--bg-body);
   font-family: var(--font-heading-02);
   color: var(--font-color-01);
