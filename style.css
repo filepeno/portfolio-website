@@ -228,6 +228,7 @@ h1.title-text span {
 .about h2 {
   text-transform: uppercase;
   font-size: 2rem;
+  margin-right: 1rem;
 }
 
 .about-image {
