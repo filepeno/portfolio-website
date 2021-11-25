@@ -185,11 +185,12 @@ main::before {
 
 section#hero-svg {
   display: flex;
+  justify-content: center;
 }
 
 section#hero-svg svg {
   width: 90%;
-  margin: 5vw auto;
+  margin-top: 5vw;
 }
 
 g#me {
