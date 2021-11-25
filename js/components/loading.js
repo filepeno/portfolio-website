@@ -2,5 +2,5 @@
 
 export function setVisible(selector, visible) {
   document.querySelector(selector).style.visibility = visible ? "visible" : "hidden";
-  document.querySelector(selector).style.opacity = visible ? "100%" : "0";
+  document.querySelector(selector).style.opacity = visible ? "1" : "0";
 }
