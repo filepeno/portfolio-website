@@ -12,7 +12,7 @@ const HTML = {
   shapes: [],
 };
 
-const fills = ["#fff0be", "#ab6461", "#001fd1", "#ffd1ba", "#ff975c", "#496eff", "#ffdfa7", "#f7adad", "#c3baa8", "#527d69", "#8fd8cd"];
+// const fills = ["#fff0be", "#ab6461", "#001fd1", "#ffd1ba", "#ff975c", "#496eff", "#ffdfa7", "#f7adad", "#c3baa8", "#527d69", "#8fd8cd"];
 
 async function loadSvg() {
   const heroSvg = await fetch("assets/img/portfolio_home-page_graphic-03-01.svg");
@@ -72,7 +72,7 @@ function animateFadeInOnShape(shape) {
     composite: "add",
   };
   const fadeIn_kf = [{ opacity: 0 }, { opacity: 0.7 }, { opacity: 0 }];
-  const fadeAnimation = shape.animate(fadeIn_kf, fadeIn_props);
+  shape.animate(fadeIn_kf, fadeIn_props);
   //   trackMouseOutFromShape(shape, fadeAnimation);
 }
 
