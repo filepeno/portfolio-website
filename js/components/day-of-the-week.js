@@ -15,6 +15,5 @@ function getDayOfTheWeek() {
   weekday[6] = "Saturday";
 
   const day = weekday[d.getDay()];
-  console.log(day);
   document.querySelector(".day-of-the-week").textContent = day;
 }
