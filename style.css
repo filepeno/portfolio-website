@@ -557,6 +557,10 @@ div.tag {
     font-size: calc(var(--h2-font-size) / 1.4);
   }
 
+  .link svg {
+    transform: scale(0.8);
+  }
+
   div.tags {
     justify-content: center;
     font-size: 0.9rem;
