@@ -138,6 +138,9 @@ address {
   opacity: 70%;
 }
 @media screen and (max-width: 600px) {
+  .main-nav {
+    border-top-width: 3px;
+  }
   .logo {
     width: 3rem;
   }
