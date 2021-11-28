@@ -1,7 +1,7 @@
 "use strict";
 
-import { setVisible } from "./js/components/loading.js";
-import { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo } from "./video.js";
+import { setVisible } from "./components/loading.js";
+import { playVideoOnMouseover, pauseVideoOnMouseout, autoplayVideo } from "./components/video.js";
 
 window.addEventListener("DOMContentLoaded", loadSvg);
 window.addEventListener("load", () => {
